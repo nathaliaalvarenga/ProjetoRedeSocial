@@ -1,0 +1,18 @@
+package projeto;
+import java.util.ArrayList;
+import projeto.DAOUsuario;
+import projeto.Usuario;
+public class Teste {
+	
+	private static final String String = null;
+	public static void main(String[] args) {
+		DAOUsuaio conexao = DAOUsuario();
+		
+	DAOUsuario conexao1 = new DAOUsuario();
+	int senha;
+	Usuario user01 = new Usuario(String email, int senha, String nome, int dataNascimento, String endereco);
+	conexao1.criarUsuario(user01);
+	
+	}
+
+}
