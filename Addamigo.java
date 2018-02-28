@@ -10,7 +10,7 @@ package projeto;
     import java.sql.ResultSet;
     import java.sql.SQLException;
     import java.util.ArrayList;
-    public enum addAmigos {
+    public addAmigos {
         private ArrayList listaDeAmigos;
        
         private String meuLogin;
@@ -230,11 +230,9 @@ package projeto;
                         }
             }
         }
-        
-       
-        
+
         public void excluir(String LoginDoAmigo) throws SQLException {
-            // Exclui amigo da minha lista de amigos
+  
             exclui1(LoginDoAmigo);
           
       
@@ -242,9 +240,7 @@ package projeto;
             return listaDeAmigos;
         }
 
-        /**
-         * @return the meuLogin
-         */
+
         public String getMeuLogin() {
             return meuLogin;
         }
