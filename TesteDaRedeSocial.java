@@ -6,11 +6,11 @@ public class Teste {
 	
 	private static final String String = null;
 	public static void main(String[] args) {
-		DAOUsuaio conexao = DAOUsuario();
+		DAOUsuario conexao = DAOUsuario();
 		
 	DAOUsuario conexao1 = new DAOUsuario();
 	int senha;
-	Usuario user01 = new Usuario(String email, int senha, String nome, int dataNascimento, String endereco);
+	Usuario user01 = new Usuario(String email, int senha, String nome, int idade);
 	conexao1.criarUsuario(user01);
 	
 	}
