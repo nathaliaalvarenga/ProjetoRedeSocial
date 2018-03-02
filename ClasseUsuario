@@ -1,56 +1,79 @@
 package projeto;
+
 public class Usuario {
+	
+	
 	private String email;
+	@SuppressWarnings("unused")
 	private int senha;
 	private String nome;
-	private int dataNascimento;
-	private String endereco;
-	private int ID;
+	private int idade;
 	
-	public void Usuario() {
-}
-	public Usuario (String email. int senha, String nome, int Nascimento, String endereco, int ID) {
-	this.email = email;
-	this.senha = senha;
-	this.nome = nome;
-	this.dataNascimento = dataNascimento;
-	this.endereco = endereco;
-	this.ID = ID;
+	
+	
+	void setSenha(int senha2) {
+		// TODO Auto-generated method stub
+		
 	}
+
+
 	public String getEmail() {
-		return email;
+		return email;			
 	}
-	public void setEmail(String email){
+	
+	
+	public void setEmail(String email) {
 		this.email = email;
-
-		public int getID() {
-			return ID;
-		}
-
-		public void setID(int ID) {
-			this.ID = ID;
-		}
-		
-		public String getNome() {
-			return nome;
-		}
-
-		public void setNome(String nome) {
-			this.nome = nome;
-		}
-
-		public int getdataNascimento() {
-			return dataNascimento;
-		}
-
-		public void setdataNascimento(int dataNascimento) {
-			this.dataNascimento = dataNascimento;
-		}
-		
-		@Override
-		public String toString() {
-			return ID + " " + nome + " " + dataNascimento;
-		}
-			
 	
 	}
+		
+	public String getNome() {
+			return nome;
+	
+	}
+
+	public void setNome(String nomeUsuario) {
+			this.nome = nomeUsuario;
+	
+	}
+
+	public int getdataNascimento() {
+			return idade;
+	
+	}
+
+	public void setdataNascimento(int dataNascimento) {
+			this.idade = dataNascimento;
+	
+	}
+
+	public int getSenha() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	public int idade() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	public int getID() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	public void setID(int iDUsuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setIdade(int idadeUsuario) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
