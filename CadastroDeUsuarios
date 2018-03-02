@@ -1,8 +1,10 @@
 package projeto;
 import java.util.List;
+import projeto.Usuario;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+	@SuppressWarnings("unused")
 	public class CadastrodeUsuarios {
 		private Scanner l;
 		private boolean execute;
@@ -38,16 +40,18 @@ import java.util.ArrayList;
 		private void cadastrar() {
 			boolean cadastrando = true;
 			while (cadastrando) {
-				System.out.println("Cadastro de Usuário");
+				System.out.println("Cadastro de Usuário do Animalsbook");
 				Dados d = new Dados();
-				d.setNome(textInput("Nome: "));
+				d.setNome(textInput("Nome completo: "));
 				d.setLogin(textInput("Login: "));
-				d.setDataNascimento(textInput("Data de Nascimento: "));
+				d.setIdade(textInput("Idade: "));
+				d.setSenha(textInput("Senha: "));
+				d.setEmail(textInput("Email: "));
 				String cadastrar = textInput("Adicionar cadastro (Sim/Não) ?");
-				if (cadastrar.equalsIgnoreCase("s")) {
+				if (cadastrar.equalsIgnoreCase("Sim")) {
 					System.out.println("Cadastro adicionado !!!");
 					dados.add(d);
-				} else if (cadastrar.equalsIgnoreCase("n")){
+				} else if (cadastrar.equalsIgnoreCase("Não")){
 					System.out.println("Cadastro ignorado !!!");
 				} else {
 					System.out.println("\nOpção inválida!\n");
@@ -73,7 +77,9 @@ import java.util.ArrayList;
 					System.out.println("Cadastro número: " + i);
 					System.out.println("\tNome: " + d.getNome());
 					System.out.println("\tLogin: " + d.getLogin());
-					System.out.println("\tCargo: " + d.DataNascimento() + "\n");
+					System.out.println("\tIdade: " + d.idade() + "\n");
+					System.out.println("\tSenha: " + d.getSenha());
+					System.out.println("\tEmail: " + d.getEmail());
 				}
 				System.out.println("\nFim da lista\n");
 			}
